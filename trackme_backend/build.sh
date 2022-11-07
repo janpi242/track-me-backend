@@ -1,4 +1,6 @@
 #!/bin/bash
+ls -lsa
+pwd
 
 # Build the project
 echo "Building the project..."
