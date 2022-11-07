@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-r4u(9+%kkga8_6!kc!d-b3!3%zo83&-@e&uev28p)^4=ztq$y^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['trackme-backend-janpi242.vercel.app']
+ALLOWED_HOSTS = ['.vercel.app']
 
 
 # Application definition
