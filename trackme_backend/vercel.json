@@ -5,7 +5,6 @@
     ],
     "functions": {
         "trackme_backend/wsgi.py": {
-            "runtime": "python",
             "memory": 128
         }
     },
