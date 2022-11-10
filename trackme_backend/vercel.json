@@ -5,7 +5,7 @@
     ],
     "functions": {
         "trackme_backend/wsgi.py": {
-            "runtime": "@vercel/python",
+            "runtime": "python",
             "memory": 128
         }
     },
