@@ -1,17 +1,19 @@
 {
-    "$schema": "https://openapi.vercel.sh/vercel.json",
-    "regions": [
-        "fra1"
-    ],
-    "functions": {
-        "trackme_backend/wsgi.py": {
-            "memory": 128
-        }
-    },
-    "rewrites": [
+    "builds": [
         {
-            "source": "/(.*)",
-            "destination": "trackme_backend/wsgi.py"
+            "src": "trackme_backend/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python3.9"
+            }
         }
-    ]
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "trackme_backend/wsgi.py"
+        }
+    ],
+    "regions": ["fra1"]
 }
