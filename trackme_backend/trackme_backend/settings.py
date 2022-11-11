@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'trackme_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'baza2507_track_me',
+        'USER': 'admin2507_track_me',
+        'PASSWORD': 'w7Y^u0G^p1',
+        'HOST': 'mysql2.alte.pl',
+        'PORT': '3306',
     }
 }
 
